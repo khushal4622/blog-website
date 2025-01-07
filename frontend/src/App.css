@@ -1,0 +1,125 @@
+/* General Styles for Pagination */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; /* Enable horizontal scrollbar */
+  }
+  
+  .pagination-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    overflow-x: auto; /* Horizontal overflow to allow scrolling */
+    flex-wrap: nowrap;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+  }
+
+  .pagination li:hover{
+    color: blue;
+   }
+  
+  /* Pagination Button Styles */
+  .pagination a {
+    display: flex;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* Pagination Link Hover Effect */
+  .pagination a:hover {
+    background: #ccc;
+  }
+  
+  /* Active Pagination Item Styling */
+  .pagination li.activePagination {
+    background: rgb(255, 106, 0);
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  /* Mobile Responsiveness (Small Screens) */
+  @media (max-width: 640px) {
+    /* Reduce padding and spacing for pagination on small screens */
+    .pagination a {
+      padding: 4px 8px; /* Reduced padding for small screens */
+    }
+    .pagination li {
+      margin: 0 3px; /* Reduced margin for better spacing */
+    }
+    .pagination-wrapper {
+      overflow-x: scroll; /* Ensure horizontal scroll works */
+    }
+    /* Adjust NavBar */
+    .NavBar .logo {
+      font-size: 1.2rem; /* Smaller logo font size */
+    }
+    /* Adjust Footer */
+    .Footer {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Tablet Responsiveness (Medium Screens) */
+  @media (min-width: 641px) and (max-width: 768px) {
+    /* Standard padding for pagination on tablet screens */
+    .pagination a {
+      padding: 5px 10px;
+    }
+    .pagination li {
+      margin: 0 5px;
+    }
+    .pagination-wrapper {
+      overflow-x: auto;
+    }
+  }
+  
+  /* Desktop and Larger Screens */
+  @media (min-width: 1024px) {
+    .pagination a {
+      padding: 5px 12px; /* Larger padding for larger screens */
+    }
+    .pagination li {
+      margin: 0 8px;
+    }
+    .pagination-wrapper {
+      overflow-x: auto; /* Horizontal scroll enabled for larger screens */
+    }
+  }
+  
+  /* Larger Screens (xl and 2xl) */
+  @media (min-width: 1280px) {
+    .pagination a {
+      padding: 6px 14px;
+    }
+    .pagination li {
+      margin: 0 10px;
+    }
+    .pagination-wrapper {
+      overflow-x: auto;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .pagination a {
+      padding: 6px 16px;
+    }
+    .pagination li {
+      margin: 0 12px;
+    }
+    .pagination-wrapper {
+      overflow-x: auto;
+    }
+  }
+  
